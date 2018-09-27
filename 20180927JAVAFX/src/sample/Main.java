@@ -80,9 +80,14 @@ public class Main extends Application {
 
             for (int i = _count; i >= 0; i--){
 
-                if (Integer.toString(_randInt) == ($btnArr[i].getText())){
-                   _flag = false;
+                if (i == 0){
+                    $btnArr[_count].setText(Integer.toString(_randInt));
+                }else{
+                     if (Integer.toString(_randInt) == ($btnArr[i].getText())){
+                         _flag = false;
+                      }
                 }
+               
 
             }
 
